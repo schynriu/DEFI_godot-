@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Tales of Symphonia - Ozette Theme.ogg-9a1b090d184daa3342dcb541735544cf.oggstr"
+
+[deps]
+
+source_file="res://asset/decor/tuto/Tales of Symphonia - Ozette Theme.ogg"
+source_md5="a4f22d4bb59aa222d26cbf8e46101790"
+
+dest_files=[ "res://.import/Tales of Symphonia - Ozette Theme.ogg-9a1b090d184daa3342dcb541735544cf.oggstr" ]
+dest_md5="16b5ab9be9b1e6cc2acf3e5e653dc2b6"
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,186 @@
+[gd_scene load_steps=66 format=2]
+
+[ext_resource path="res://script/Player/player.gd" type="Script" id=1]
+[ext_resource path="res://ASSET/chevalier/Dead (1).png" type="Texture" id=2]
+[ext_resource path="res://ASSET/chevalier/Dead (2).png" type="Texture" id=3]
+[ext_resource path="res://ASSET/chevalier/Dead (3).png" type="Texture" id=4]
+[ext_resource path="res://ASSET/chevalier/Dead (4).png" type="Texture" id=5]
+[ext_resource path="res://ASSET/chevalier/Dead (5).png" type="Texture" id=6]
+[ext_resource path="res://ASSET/chevalier/Dead (6).png" type="Texture" id=7]
+[ext_resource path="res://ASSET/chevalier/Dead (7).png" type="Texture" id=8]
+[ext_resource path="res://ASSET/chevalier/Dead (8).png" type="Texture" id=9]
+[ext_resource path="res://ASSET/chevalier/Dead (9).png" type="Texture" id=10]
+[ext_resource path="res://ASSET/chevalier/Dead (10).png" type="Texture" id=11]
+[ext_resource path="res://asset/chevalier/Dead (10).png" type="Texture" id=12]
+[ext_resource path="res://asset/chevalier/Walk (1).png" type="Texture" id=13]
+[ext_resource path="res://asset/chevalier/Walk (2).png" type="Texture" id=14]
+[ext_resource path="res://asset/chevalier/Walk (3).png" type="Texture" id=15]
+[ext_resource path="res://asset/chevalier/Walk (5).png" type="Texture" id=16]
+[ext_resource path="res://asset/chevalier/Walk (4).png" type="Texture" id=17]
+[ext_resource path="res://asset/chevalier/Walk (6).png" type="Texture" id=18]
+[ext_resource path="res://asset/chevalier/Walk (7).png" type="Texture" id=19]
+[ext_resource path="res://asset/chevalier/Walk (9).png" type="Texture" id=20]
+[ext_resource path="res://asset/chevalier/Walk (8).png" type="Texture" id=21]
+[ext_resource path="res://asset/chevalier/Walk (10).png" type="Texture" id=22]
+[ext_resource path="res://asset/chevalier/Jump (5).png" type="Texture" id=23]
+[ext_resource path="res://ASSET/chevalier/Attack (1).png" type="Texture" id=24]
+[ext_resource path="res://ASSET/chevalier/Attack (2).png" type="Texture" id=25]
+[ext_resource path="res://ASSET/chevalier/Attack (3).png" type="Texture" id=26]
+[ext_resource path="res://ASSET/chevalier/Attack (4).png" type="Texture" id=27]
+[ext_resource path="res://ASSET/chevalier/Attack (5).png" type="Texture" id=28]
+[ext_resource path="res://ASSET/chevalier/Attack (6).png" type="Texture" id=29]
+[ext_resource path="res://ASSET/chevalier/Attack (7).png" type="Texture" id=30]
+[ext_resource path="res://ASSET/chevalier/Attack (8).png" type="Texture" id=31]
+[ext_resource path="res://ASSET/chevalier/Attack (9).png" type="Texture" id=32]
+[ext_resource path="res://ASSET/chevalier/Attack (10).png" type="Texture" id=33]
+[ext_resource path="res://ASSET/chevalier/Idle (1).png" type="Texture" id=34]
+[ext_resource path="res://ASSET/chevalier/Idle (2).png" type="Texture" id=35]
+[ext_resource path="res://ASSET/chevalier/Idle (3).png" type="Texture" id=36]
+[ext_resource path="res://ASSET/chevalier/Idle (4).png" type="Texture" id=37]
+[ext_resource path="res://ASSET/chevalier/Idle (5).png" type="Texture" id=38]
+[ext_resource path="res://ASSET/chevalier/Idle (6).png" type="Texture" id=39]
+[ext_resource path="res://ASSET/chevalier/Idle (7).png" type="Texture" id=40]
+[ext_resource path="res://ASSET/chevalier/Idle (8).png" type="Texture" id=41]
+[ext_resource path="res://ASSET/chevalier/Idle (9).png" type="Texture" id=42]
+[ext_resource path="res://ASSET/chevalier/Idle (10).png" type="Texture" id=43]
+[ext_resource path="res://asset/chevalier/Jump (1).png" type="Texture" id=44]
+[ext_resource path="res://asset/chevalier/Jump (2).png" type="Texture" id=45]
+[ext_resource path="res://asset/chevalier/Jump (3).png" type="Texture" id=46]
+[ext_resource path="res://asset/chevalier/Jump (4).png" type="Texture" id=47]
+[ext_resource path="res://asset/chevalier/Jump (6).png" type="Texture" id=48]
+[ext_resource path="res://asset/chevalier/Jump (7).png" type="Texture" id=49]
+[ext_resource path="res://asset/chevalier/Jump (8).png" type="Texture" id=50]
+[ext_resource path="res://asset/chevalier/Jump (9).png" type="Texture" id=51]
+[ext_resource path="res://asset/chevalier/Jump (10).png" type="Texture" id=52]
+[ext_resource path="res://asset/chevalier/JumpAttack (1).png" type="Texture" id=53]
+[ext_resource path="res://asset/chevalier/JumpAttack (2).png" type="Texture" id=54]
+[ext_resource path="res://asset/chevalier/JumpAttack (3).png" type="Texture" id=55]
+[ext_resource path="res://asset/chevalier/JumpAttack (4).png" type="Texture" id=56]
+[ext_resource path="res://asset/chevalier/JumpAttack (5).png" type="Texture" id=57]
+[ext_resource path="res://asset/chevalier/JumpAttack (6).png" type="Texture" id=58]
+[ext_resource path="res://asset/chevalier/JumpAttack (7).png" type="Texture" id=59]
+[ext_resource path="res://asset/chevalier/JumpAttack (8).png" type="Texture" id=60]
+[ext_resource path="res://asset/chevalier/JumpAttack (9).png" type="Texture" id=61]
+[ext_resource path="res://asset/chevalier/JumpAttack (10).png" type="Texture" id=62]
+[ext_resource path="res://UI/stats/UI.tscn" type="PackedScene" id=63]
+
+
+
+
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "mort",
+"speed": 13.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ) ],
+"loop": true,
+"name": "marche",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 23 ) ],
+"loop": true,
+"name": "tombe",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ) ],
+"loop": true,
+"name": "attaque",
+"speed": 25.0
+}, {
+"frames": [ ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ) ],
+"loop": true,
+"name": "pas_bouger",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 23 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ) ],
+"loop": true,
+"name": "saut",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ) ],
+"loop": true,
+"name": "attaque saut",
+"speed": 25.0
+} ]
+_sections_unfolded = [ "Resource" ]
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 3.63927, 20.9054 )
+
+[node name="player" type="KinematicBody2D"]
+
+position = Vector2( 372.882, 90.9394 )
+scale = Vector2( 0.962574, 0.906051 )
+input_pickable = true
+collision_layer = 3
+collision_mask = 3
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+_sections_unfolded = [ "Collision" ]
+
+[node name="animation_perso" type="AnimatedSprite" parent="." index="0"]
+
+position = Vector2( 2.793, -13.1302 )
+scale = Vector2( 0.157946, 0.14955 )
+frames = SubResource( 1 )
+animation = "saut"
+frame = 4
+playing = true
+_sections_unfolded = [ "Visibility" ]
+
+[node name="hitbox perso" type="CollisionShape2D" parent="." index="1"]
+
+position = Vector2( -2.99405, -2.93696 )
+scale = Vector2( 3.7972, 1.66332 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Material", "Visibility" ]
+
+[node name="camera_perso" type="Camera2D" parent="." index="2"]
+
+position = Vector2( -2.99405, -23.1106 )
+scale = Vector2( 0.948518, 1.03006 )
+anchor_mode = 1
+rotating = false
+current = true
+zoom = Vector2( 0.6, 0.5 )
+limit_left = -10000000
+limit_top = -10000000
+limit_right = 10000000
+limit_bottom = 10000000
+limit_smoothed = false
+drag_margin_h_enabled = false
+drag_margin_v_enabled = false
+smoothing_enabled = false
+smoothing_speed = 5.0
+offset_v = 0.0
+offset_h = 0.0
+drag_margin_left = 0.2
+drag_margin_top = 0.2
+drag_margin_right = 0.2
+drag_margin_bottom = 0.2
+editor_draw_screen = true
+editor_draw_limits = false
+editor_draw_drag_margin = false
+_sections_unfolded = [ "Drag Margin", "Editor", "Limit", "Material", "Offset", "Pause", "Smoothing", "Visibility", "Z Index" ]
+
+[node name="UI" parent="." index="3" instance=ExtResource( 63 )]
+
+margin_left = -602.0
+margin_top = -323.0
+margin_right = 596.0
+margin_bottom = 275.0
+
+[node name="ray" type="RayCast2D" parent="." index="4"]
+
+enabled = true
+exclude_parent = true
+cast_to = Vector2( 40, 0 )
+collision_mask = 1
+
+

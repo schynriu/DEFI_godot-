@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/tuto.ogg-16358e758111a69bc7aa56c175c1a279.oggstr"
+
+[deps]
+
+source_file="res://musique/tuto/tuto.ogg"
+source_md5="4d79ea8838cc46f2491bc08ff19a22f0"
+
+dest_files=[ "res://.import/tuto.ogg-16358e758111a69bc7aa56c175c1a279.oggstr" ]
+dest_md5="0e5842647812314a3c4952c3804af4cf"
+
+[params]
+
+loop=true
+loop_offset=0

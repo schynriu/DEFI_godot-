@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Deaths Wizard sheet.png-53b284c5df4f4d79f54b7053a2746703.stex"
+
+[deps]
+
+source_file="res://asset/mob/wizard/Deaths Wizard sheet.png"
+source_md5="f50f72bc8dac873e1c7599303cec6312"
+
+dest_files=[ "res://.import/Deaths Wizard sheet.png-53b284c5df4f4d79f54b7053a2746703.stex" ]
+dest_md5="25f4a2ac41ecf81e27a859d62308f442"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

@@ -1,0 +1,51 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://script/Mechant/MOB/magicien/fireball.gd" type="Script" id=1]
+[ext_resource path="res://asset/danger/wizard/fireball_1.png" type="Texture" id=2]
+[ext_resource path="res://asset/danger/wizard/fireball_2.png" type="Texture" id=3]
+[ext_resource path="res://asset/danger/wizard/fireball_3.png" type="Texture" id=4]
+[ext_resource path="res://asset/danger/wizard/fireball_4.png" type="Texture" id=5]
+[ext_resource path="res://asset/danger/wizard/fireball_5.png" type="Texture" id=6]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "bouboule",
+"speed": 15.0
+} ]
+
+[sub_resource type="CircleShape2D" id=2]
+
+custom_solver_bias = 0.0
+radius = 10.0
+
+[node name="fireball" type="Area2D"]
+
+position = Vector2( 296.375, 138.309 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 1 )
+_sections_unfolded = [ "Collision", "collision" ]
+
+[node name="animation_bouboule" type="AnimatedSprite" parent="." index="0"]
+
+position = Vector2( 6.60193, 1.32037 )
+frames = SubResource( 1 )
+animation = "bouboule"
+frame = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+
+position = Vector2( 0, 1.092 )
+scale = Vector2( 1, 1.084 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Visibility" ]
+
+

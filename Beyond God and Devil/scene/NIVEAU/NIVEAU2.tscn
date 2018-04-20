@@ -1,0 +1,70 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://asset/TILESET/niveau1/mur-hori_tileset.tres" type="TileSet" id=1]
+[ext_resource path="res://asset/TILESET/niveau1/MUR_VERTI_TILESET.tres" type="TileSet" id=2]
+[ext_resource path="res://scene/player/player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scene/NIVEAU/level complete.tscn" type="PackedScene" id=4]
+
+[node name="niveau2" type="Node"]
+
+[node name="TileMap" type="TileMap" parent="." index="0"]
+
+scale = Vector2( 0.5, 0.5 )
+mode = 0
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 64, 64 )
+cell_quadrant_size = 13
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 1048580, 3, 0, 1048584, 3, 0, 1048588, 2, 0, 1048592, 2, 0, 1048596, 4, 0, 1048600, 4, 0 )
+_sections_unfolded = [ "Cell" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TileMap2" type="TileMap" parent="." index="1"]
+
+scale = Vector2( 0.5, 0.5 )
+mode = 0
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 64, 64 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 524310, 4, 0, 720912, 4, 0, 786448, 4, 0, 786454, 4, 0, 851978, 4, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="immigration" type="Node" parent="." index="2"]
+
+[node name="player" parent="immigration" index="0" instance=ExtResource( 3 )]
+
+position = Vector2( 151.359, 478.186 )
+
+[node name="level complete2" parent="immigration" index="1" instance=ExtResource( 4 )]
+
+position = Vector2( 858.514, 473.737 )
+world_scene = "res://scene/NIVEAU/NIVEAU1.tscn"
+
+

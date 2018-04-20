@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/THE-beginning.ogg-659f0b6a109319efceeb2a3d8870ef01.oggstr"
+
+[deps]
+
+source_file="res://musique/lvl1/THE-beginning.ogg"
+source_md5="38aebbe069515f516c763eb37750a481"
+
+dest_files=[ "res://.import/THE-beginning.ogg-659f0b6a109319efceeb2a3d8870ef01.oggstr" ]
+dest_md5="69e63f451b8766b0bd72f998091b5185"
+
+[params]
+
+loop=true
+loop_offset=0

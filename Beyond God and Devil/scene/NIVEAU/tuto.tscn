@@ -1,0 +1,226 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://asset/decor/tuto/Background.png" type="Texture" id=1]
+[ext_resource path="res://asset/TILESET/tuto/plateforme tuto.tres" type="TileSet" id=2]
+[ext_resource path="res://asset/TILESET/tuto/plateforme tuto2.tres" type="TileSet" id=3]
+[ext_resource path="res://musique/tuto/tuto.ogg" type="AudioStream" id=4]
+[ext_resource path="res://script/decor/TUTO/block.gd" type="Script" id=5]
+[ext_resource path="res://asset/decor/tuto/JungleDirtTileSet.png" type="Texture" id=6]
+[ext_resource path="res://scene/NIVEAU/level complete.tscn" type="PackedScene" id=7]
+[ext_resource path="res://script/Niveau/level complete tuto.gd" type="Script" id=8]
+[ext_resource path="res://scene/items/PageTuto.tscn" type="PackedScene" id=9]
+[ext_resource path="res://script/Item/PageTuto2.gd" type="Script" id=10]
+[ext_resource path="res://script/Item/PageTuto3.gd" type="Script" id=11]
+[ext_resource path="res://scene/player/player.tscn" type="PackedScene" id=12]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[node name="tuto" type="Node" index="0"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." index="0"]
+
+editor/display_folded = true
+layer = -1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+scroll_offset = Vector2( 0, 0 )
+scroll_base_offset = Vector2( 0, 0 )
+scroll_base_scale = Vector2( 1, 1 )
+scroll_limit_begin = Vector2( 0, 0 )
+scroll_limit_end = Vector2( 0, 0 )
+scroll_ignore_camera_zoom = true
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" index="0"]
+
+motion_scale = Vector2( 1, 1 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 0, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer" index="0"]
+
+position = Vector2( 1450, -350 )
+scale = Vector2( 3.9248, 4.38484 )
+texture = ExtResource( 1 )
+
+[node name="decors" type="Node" parent="." index="1"]
+
+[node name="TileMap" type="TileMap" parent="decors" index="0"]
+
+position = Vector2( -50, -210 )
+mode = 0
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 32, 32 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 983046, 0, 0, 983047, 1, 0, 983048, 1, 0, 983049, 1, 0, 983050, 1, 0, 983051, 1, 0, 983052, 1, 0, 983053, 1, 0, 983054, 1, 0, 983055, 1, 0, 983056, 1, 0, 983057, 1, 0, 983058, 1, 0, 983059, 1, 0, 983060, 1, 0, 983061, 1, 0, 983062, 1, 0, 983063, 1, 0, 983064, 1, 0, 983065, 1, 0, 983066, 1, 0, 983067, 1, 0, 983068, 1, 0, 983069, 1, 0, 983070, 1, 0, 983071, 1, 0, 983072, 1, 0, 983073, 1, 0, 983074, 1, 0, 983075, 1, 0, 983076, 1, 0, 983077, 1, 0, 983078, 1, 0, 983079, 1, 0, 983080, 1, 0, 983081, 1, 0, 1048582, 5, 0, 1114118, 10, 0, 1114119, 9, 0, 1114120, 9, 0, 1114121, 9, 0, 1114122, 9, 0, 1114123, 9, 0, 1114124, 9, 0, 1114125, 9, 0, 1114126, 9, 0, 1114127, 9, 0, 1114128, 9, 0, 1114129, 9, 0, 1114130, 9, 0, 1114131, 9, 0, 1114132, 9, 0, 1114133, 9, 0, 1114134, 9, 0, 1114135, 9, 0, 1114136, 9, 0, 1114137, 9, 0, 1114138, 9, 0, 1114139, 9, 0, 1114140, 9, 0, 1114141, 9, 0, 1114142, 9, 0, 1114143, 9, 0, 1114144, 9, 0, 1114145, 9, 0, 1114146, 9, 0, 1114147, 9, 0, 1114148, 9, 0, 1114149, 9, 0, 1114150, 9, 0, 1114151, 9, 0, 1114152, 9, 0, 1114153, 9, 0 )
+_sections_unfolded = [ "Cell", "Collision" ]
+
+[node name="TileMap2" type="TileMap" parent="decors" index="1"]
+
+position = Vector2( -252.216, -160.907 )
+z_index = 1
+mode = 0
+tile_set = ExtResource( 3 )
+cell_size = Vector2( 10, 10 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 2424906, 0, 0, 2621508, 0, 0, 2621511, 0, 0, 2621514, 0, 0, 2818113, 0, 0, 2818116, 0, 0, 2818119, 0, 0, 2818122, 0, 0 )
+_sections_unfolded = [ "Cell", "Collision", "Transform", "Z Index" ]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." index="2"]
+
+stream = ExtResource( 4 )
+volume_db = 2.0
+autoplay = true
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="block" type="StaticBody2D" parent="." index="3"]
+
+editor/display_folded = true
+position = Vector2( 80, -10 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block" index="0"]
+
+position = Vector2( 960, 196.751 )
+scale = Vector2( 1.53846, 12.0192 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform", "Z Index" ]
+
+[node name="block" type="Sprite" parent="block" index="1"]
+
+position = Vector2( 963, 194 )
+scale = Vector2( 0.8125, 7.75003 )
+texture = ExtResource( 6 )
+region_enabled = true
+region_rect = Rect2( 160, 160, 32, 32 )
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="level complete2" parent="." index="4" instance=ExtResource( 7 )]
+
+position = Vector2( 1260, 270 )
+script = ExtResource( 8 )
+world_scene = "res://UI/intro/Intro.tscn"
+
+[node name="items" type="Node" parent="." index="5"]
+
+[node name="PageTuto" parent="items" index="0" instance=ExtResource( 9 )]
+
+position = Vector2( 335.918, 281.38 )
+scale = Vector2( 0.697007, 0.625089 )
+
+[node name="PageTuto2" parent="items" index="1" instance=ExtResource( 9 )]
+
+position = Vector2( 598.972, 282.557 )
+scale = Vector2( 0.647203, 0.630836 )
+script = ExtResource( 10 )
+
+[node name="PageTuto3" parent="items" index="2" instance=ExtResource( 9 )]
+
+position = Vector2( 882.73, 283.735 )
+scale = Vector2( 0.65754, 0.62172 )
+script = ExtResource( 11 )
+
+[node name="player" parent="." index="6" instance=ExtResource( 12 )]
+
+position = Vector2( 250, 270 )
+_sections_unfolded = [ "Collision", "Material", "Transform", "Visibility", "Z Index" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." index="7"]
+
+editor/display_folded = true
+position = Vector2( 125.548, 175.379 )
+scale = Vector2( 1.20179, 3.65317 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" index="0"]
+
+position = Vector2( -14.4826, 0.767286 )
+scale = Vector2( 3.10408, 3.39953 )
+shape = SubResource( 2 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." index="8"]
+
+editor/display_folded = true
+position = Vector2( 1325.96, 161.26 )
+scale = Vector2( 1, 4.40133 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" index="0"]
+
+position = Vector2( 6.13513, 5.28422 )
+scale = Vector2( 3.83297, 2.65344 )
+shape = SubResource( 3 )
+
+
